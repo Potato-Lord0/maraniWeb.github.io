@@ -1,0 +1,170 @@
+:root {
+  --terracotta: #a04a2a;
+  --amber: #d8a441;
+  --deep-red: #5b1f1f;
+  --earth: #2f2a25;
+  --light: #f5f1eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  color: var(--earth);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.navbar {
+  background: rgba(47, 42, 37, 0.95);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  color: var(--amber);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background: url("images/hero-qvevri.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  padding: 3rem;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: var(--amber);
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.light {
+  background: var(--light);
+}
+
+.dark {
+  background: var(--earth);
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: var(--terracotta);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.list {
+  margin-left: 1.2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.primary {
+  background: var(--terracotta);
+  color: #fff;
+}
+
+.secondary {
+  background: var(--amber);
+  color: #000;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7rem;
+}
+
+footer {
+  background: #1f1b18;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+}
