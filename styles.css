@@ -56,17 +56,32 @@ body {
 }
 
 .hero {
-  background: url("images/hero-qvevri.jpg") center/cover no-repeat;
+  background: url("images/great-falls.jpg") center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
 }
 
+.logo img {
+  height: 48px;
+  width: auto;
+}
+
+.hero-logo {
+  max-width: 280px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.6));
+}
+
 .hero-overlay {
-  background: rgba(0,0,0,0.55);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.55)
+  );
   color: #fff;
-  padding: 3rem;
+  padding: 4rem 2rem;
   width: 100%;
 }
 
@@ -76,9 +91,12 @@ body {
 }
 
 .tagline {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--amber);
   margin-bottom: 1rem;
 }
+
 
 .section {
   padding: 4rem 0;
