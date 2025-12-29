@@ -69,11 +69,21 @@ body {
 }
 
 .hero-logo {
-  max-width: 280px;
-  width: 100%;
-  margin-bottom: 1.5rem;
+  width: min(220px, 60vw);
+  max-height: 220px;
+  height: auto;
+  margin: 0 auto 1.5rem auto;
+  display: block;
   filter: drop-shadow(0 6px 12px rgba(0,0,0,0.6));
 }
+@media (max-width: 480px) {
+  .hero-logo {
+    width: 160px;
+    max-height: 160px;
+    margin-bottom: 1rem;
+  }
+}
+
 
 .hero-overlay {
   background: linear-gradient(
