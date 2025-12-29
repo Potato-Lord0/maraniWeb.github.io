@@ -66,4 +66,15 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('This contact form is static. Provide a backend or third-party provider to handle submissions.');
     });
   }
+
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const primaryNav = document.getElementById('primary-navigation');
+  if (navToggle && primaryNav) {
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      primaryNav.classList.toggle('open');
+    });
+  }
 });

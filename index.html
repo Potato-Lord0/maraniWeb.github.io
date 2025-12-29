@@ -4,10 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Marani Wine Club | Georgian Qvevri Tradition in Virginia</title>
-  <meta name="description" content="Marani Wine Club in Great Falls, Virginia preserves the ancient Georgian qvevri wine-making tradition through hands-on communal wine making, tastings, and cultural education." />
-  <meta name="keywords" content="Marani Wine Club Great Falls Virginia Georgian Qvevri Tradition, natural wine, orange wine, UNESCO heritage" />
+  <title>Marani Wine Club | Natural & Preservative-Free Wines in Virginia</title>
+  <meta name="description" content="Marani Wine Club in Great Falls, Virginia preserves and practices natural, preservative-free winemaking through hands-on communal winemaking, tastings, and cultural education." />
+  <meta name="keywords" content="Marani Wine Club Great Falls Virginia, natural wine, preservative-free, orange wine, small-batch" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <script src="https://js.stripe.com/v3/"></script>
 </head>
@@ -17,10 +20,13 @@
   <header class="navbar">
     <div class="container nav-content">
       <div class="logo">
-        <img src="images/hero-qvevri.jpg" alt="Great Falls Winery Marani Logo">
+        <img src="images/marani-logo2.png" alt="Great Falls Winery Marani Logo">
       </div>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="nav-toggle-icon"></span>
+      </button>
       <nav>
-        <ul class="nav-links">
+        <ul class="nav-links" id="primary-navigation" role="navigation">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#activities">Activities</a></li>
@@ -38,13 +44,14 @@
     <div class="hero-overlay">
       <img src="images/marani-logo2.png" alt="Marani Wine Club Logo" class="hero-logo">
 
+      <h1 class="hero-title">Marani Wine Club</h1>
+
       <p class="tagline">
         Ancient Georgian Wine-Making Tradition in Great Falls, Virginia
       </p>
 
       <p class="hero-text">
-        Founded in 2021, Marani practices the UNESCO-recognized Georgian qvevri
-        wine-making tradition—bringing ancient methods into a modern communal setting.
+        Founded in 2021, Marani focuses on natural, preservative-free winemaking—bringing traditional hands-on methods into a modern communal setting.
       </p>
 
       <div class="hero-buttons">
@@ -64,14 +71,8 @@
       </p>
       <p>
         Our club was founded in 2021 in Great Falls, Virginia with a mission to preserve
-        and practice the ancient Georgian <strong>qvevri</strong> method—large,
-        egg-shaped clay vessels buried underground, where grapes ferment naturally
-        with their skins, stems, and seeds.
-      </p>
-      <p>
-        This method, recognized by UNESCO as an Intangible Cultural Heritage of Humanity,
-        produces expressive natural wines, including traditional amber (orange) wines
-        from white grapes.
+        and practice small-batch, minimal-intervention fermentation—allowing grapes to ferment naturally
+        with their skins, stems, and seeds and avoiding added preservatives.
       </p>
       <p>
         At Marani, members actively participate in every stage of the process and enjoy
@@ -87,7 +88,7 @@
       <div class="grid">
         <div class="card">
           <h3>Hands-On Wine Making</h3>
-          <p>Harvesting, crushing, fermentation, and aging using qvevri-style methods.</p>
+          <p>Harvesting, crushing, fermentation, and aging using natural, minimal-intervention methods (no added preservatives).</p>
         </div>
         <div class="card">
           <h3>Wine Tastings</h3>
@@ -131,10 +132,10 @@
     <div class="container">
       <h2>Gallery</h2>
       <div class="gallery-grid">
-        <img src="images/hero-qvevri.jpg" alt="Qvevri buried in earth" />
+        <img src="images/hero-qvevri.jpg" alt="Traditional winemaking vessel buried in earth" />
         <img src="images/vineyard.jpg" alt="Vineyard and grape harvest" />
         <img src="images/tasting.jpg" alt="Wine tasting gathering" />
-        <img src="images/qvevri-detail.jpg" alt="Traditional qvevri vessel" />
+        <img src="images/qvevri-detail.jpg" alt="Winemaking vessel detail" />
       </div>
     </div>
   </section>
@@ -178,7 +179,7 @@
   <!-- Footer -->
   <footer>
     <p>© 2025 Marani Wine Club | Great Falls, Virginia</p>
-    <p>Preserving Georgian Qvevri Wine Tradition</p>
+    <p>Preserving natural, preservative-free winemaking traditions</p>
   </footer>
 
   <script src="scripts.js"></script>
