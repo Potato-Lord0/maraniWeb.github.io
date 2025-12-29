@@ -37,7 +37,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: rgba(47, 42, 37, 0.95);
+  background: rgba(47, 42, 37, 1);
 }
 
 .nav-content {
